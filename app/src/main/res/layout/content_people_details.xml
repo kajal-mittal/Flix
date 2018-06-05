@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.kmdev.flix.ui.activities.PeopleDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:text="@string/biography"
+            android:textAppearance="@style/TextAppearance.FontPath.BOLD"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp_16dp" />
+
+        <TextView
+            android:id="@+id/tv_biography"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/text_margin"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/dp_10"
+            android:textAppearance="@style/TextAppearance.FontPath.REGULAR"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/tv_no_biography"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/text_margin"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:text="@string/no_biography_available"
+            android:textAppearance="@style/TextAppearance.FontPath.REGULAR"
+            android:textSize="@dimen/dp_15"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_known_for"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="@string/tv_known_for"
+            android:textAppearance="@style/TextAppearance.FontPath.BOLD"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp_16dp" />
+
+        <FrameLayout
+            android:id="@+id/frame_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_known"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_loading_known"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dp_4dp"
+                    android:text="@string/loading_wait"
+
+                    android:textAppearance="@style/TextAppearance.FontPath.REGULAR"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_known"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin" />
+
+            <TextView
+                android:id="@+id/tv_known"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_margin"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:text="@string/no_known_available"
+
+                android:textAppearance="@style/TextAppearance.FontPath.REGULAR"
+                android:textSize="@dimen/dp_15"
+                android:visibility="gone" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

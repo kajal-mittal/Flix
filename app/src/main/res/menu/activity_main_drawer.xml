@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:checked="true"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_favourite"
+            android:title="Favourites" />
+        <item
+            android:id="@+id/nav_people"
+            android:title="People"
+            android:visible="true" />
+
+
+    </group>
+
+    <item android:title="Extra">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_settings"
+                android:title="Settings" />
+            <item
+                android:id="@+id/nav_about"
+                android:title="About"
+                android:visible="false" />
+            <item
+                android:id="@+id/nav_donate"
+                android:title="Donate"
+                android:visible="false" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/AppTheme.NoActionBar"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:layout_margin="@dimen/dp_4"
+    android:background="?attr/selectableItemBackground"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/radius_cardView">
+
+    <LinearLayout
+
+
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:adjustViewBounds="true"
+                android:background="@color/photo_placeholder"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tv_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/dp_5"
+                android:background="@drawable/bg_rating"
+                android:padding="@dimen/dp_5"
+                android:textColor="@color/color_white" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_5"
+            android:textAppearance="@style/TextAppearance.FontPath.BOLD"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_release_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp_5"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_5"
+            android:textAppearance="@style/TextAppearance.FontPath.REGULAR"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp_12" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

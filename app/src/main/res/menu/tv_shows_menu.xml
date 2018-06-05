@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_tv_popular"
+            android:orderInCategory="100"
+            android:title="@string/popular"
+
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/action_tv_top_rated"
+            android:orderInCategory="100"
+            android:title="@string/top_rated"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/action_on_tv"
+            android:orderInCategory="100"
+            android:title="@string/on_tv"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/action_airing_today"
+            android:orderInCategory="100"
+            android:title="@string/airing_today"
+            app:showAsAction="never" />
+
+
+    </group>
+    <item
+        android:id="@+id/action_tv_search"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:orderInCategory="100"
+        android:title="@string/search"
+        app:showAsAction="always" />
+</menu>

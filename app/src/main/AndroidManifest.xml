@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kmdev.flix">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:name=".ui.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.activities.HomeActivity"
+            android:theme="@style/AppTheme_Pre1" />
+        <activity
+            android:name=".ui.activities.MovieDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.MovieImageFullScreenActivity"
+            android:theme="@style/AppTheme_Pre1" />
+        <activity
+            android:name=".ui.activities.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".ui.activities.SplashScreenActivity"
+            android:theme="@style/AppTheme_Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SearchMovieActivity"
+            android:theme="@style/AppTheme_Grey" />
+        <activity
+            android:name=".ui.activities.PeopleDetailsActivity"
+            android:label="@string/title_activity_people_details"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

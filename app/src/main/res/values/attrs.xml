@@ -1,0 +1,9 @@
+<resources>
+    <declare-styleable name="DrawInsetsFrameLayout">
+        <attr name="insetBackground" format="color|reference" />
+    </declare-styleable>
+    <declare-styleable name="SimpleTextSwitcher">
+        <attr name="switcherText" format="string" />
+        <attr name="switcherTextAppearance" format="reference" />
+    </declare-styleable>
+</resources>

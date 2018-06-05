@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.kmdev.flix.ui.dialogs.ClearFavDialogPrefrence
+        android:summary="@string/desc_clear_fav"
+        android:title="@string/titile_clear_fav" />
+    <com.kmdev.flix.ui.dialogs.AboutDialogPrefrencce android:title="@string/title_about" />
+    <com.kmdev.flix.ui.dialogs.VersionDialogPrefrence android:title="@string/title_version" />
+    <!--
+        <com.kmdev.flix.ui.dialogs.LicenceDialogPrefrence android:title="@string/title_licence" />
+    -->
+
+
+</PreferenceScreen>

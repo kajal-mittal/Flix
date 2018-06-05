@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#02888D</color>
+    <color name="colorPrimaryDark">#036a6e</color>
+    <color name="colorAccent">#FF5722</color>
+    <color name="color_white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="dark_grey">#4b4747</color>
+    <color name="grey">#fbfbfb</color>
+    <color name="photo_placeholder">#ccc</color>
+    <color name="gradient_start">#dedede</color>
+    <color name="colorPrimaryLight">#9c02888d</color>
+    <color name="rating_bg_color">#cb212121</color>
+
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true">
+
+    <ProgressBar
+        android:id="@+id/progress_bar_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="true"
+
+        android:padding="@dimen/padding_progress_bar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_network_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress_bar_loading"
+        android:layout_margin="@dimen/dp_10"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_interenet_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_retry"
+            android:drawablePadding="@dimen/dp_10"
+            android:text="Network connection not available."
+            android:textAppearance="@style/TextAppearance.FontPath.REGULAR"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="?attr/selectableItemBackground"
+            android:singleLine="true"
+            android:text="@string/retry"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+</RelativeLayout>
